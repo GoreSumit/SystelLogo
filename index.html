@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .loaderScreen {
+            border: 2px solid #f24900;
+            border-radius: 50%;
+            height: 70px;
+            width: 70px;
+            display: flex;
+            justify-content: center;
+            animation: borderFlow 1s linear infinite;
+            padding: 5px;
+        }
+
+        @keyframes borderFlow {
+
+            0%,
+            100% {
+                border-color: #f24900;
+                /* Starting and ending color */
+            }
+
+            50% {
+                border-color: gray;
+                /* Middle color */
+            }
+        }
+        .main{
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="loaderScreen">
+            <img src="Logo.svg" width="50px">
+        </div>
+    </div>
+
+</body>
+
+</html>
